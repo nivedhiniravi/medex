@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+   
+    <script type="text/javascript">
+        $(window).load(function() {
+            $("div.lay").show();
+            $("div.lay1").hide();
+            $("div.lay2").hide();
+            $("div.cancel").hide();
+
+        });
+        $(document).ready(function() {
+            $("#nbutton").click(function() {
+                $("div.lay").show();
+                $("div.lay1").hide();
+                $("div.lay2").hide();
+                $("div.cancel").hide();
+               
+            });
+            $("#nbutton1").click(function() {
+                $("div.lay").hide();
+                $("div.lay1").show();
+                $("div.lay2").hide();
+                $("div.cancel").hide();
+              
+
+            });
+            $("#nbutton2").click(function() {
+                $("div.lay").hide();
+                $("div.lay1").hide();
+                $("div.lay2").show();
+                $("div.cancel").hide();
+              
+
+            });
+
+            $("#nbutton3").click(function() {
+                $("div.lay").hide();
+                $("div.lay1").hide();
+                $("div.lay2").hide();
+                $("div.cancel").show();
+               
+
+            });
+            
+        });
+
+</script>
+  <style>
+            
+            .form-group
+            {
+                color:dodgerblue;
+            }
+            
+  </style>
+
+</head>
+<body>
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-danger" id="nbutton">HOME</a>
+    <a href="#" class="btn btn-danger" id="nbutton1">CHECK APPOINTMENT</a>
+    <a href="#" class="btn btn-danger" id="nbutton2">ADD APPOINTMENT</a>
+    <a href="#" class="btn btn-danger" id="nbutton3">VIEW ALL APPOINTMENTS</a>
+    
+    <a href="homemedical.html" class="btn btn-danger" >LOGOUT</a>
+</div>
+
+<h1>Welcome</h1>   
+<div class="lay"><hr>
+<h2>Check your Appointments by Date</h2>
+<label>
+<h3>Choose a Date to view your Appointment(Required)</h3>
+<br>
+<input type="date" name="date"/></label>
+
+</div>
+
+<div class="lay1"><hr>
+	<h2>Update The Diagnosis Information Of The Patient</h2>
+<hr style="height:3px;border:none;color:#333;background-color:blue;" />
+<h4>Select Appointment Date(Required)</h4><br>
+<input type="date" name="date"><br>
+<h4>Select Available Patient</h4><br>
+<input type="text" name="date"><br><hr>
+</div>
+
+<div class="lay2"><hr>
+ <div class="container col-xs-4 col-xs-offset-4" >
+        <form>
+                
+        <div class="form-group">
+               <h3>Search your Appointment By Date </h3>
+          Choose Date to Search Appointment(Required)<input type="date" class="form-control" name="date" id="date"/>
+          
+        </div>
+        
+          
+        </form>
+  
+</div>
+</div>
+<div class="cancel"><hr>
+ <div class="container col-xs-8 col-xs-offset-2" >
+                    <h3 style="color:dodgerblue;">You Can Cancel The Appointment Ateast One day Before The Scheduled date </h3>
+            </div>   
+            
+        <div class="container col-xs-4 col-xs-offset-2" >
+        <form>
+                
+        <div class="form-group">
+               
+                Search the Appointment to Cancel(Required)
+                <input list="cancel" name="cancel" class="form-control">
+                <datalist id="cancel">
+
+                </datalist>
+          
+        </div>
+       
+          
+        </form>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

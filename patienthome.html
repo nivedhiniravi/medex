@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+   
+    <script type="text/javascript">
+        $(window).load(function() {
+            $("div.lay").show();
+            $("div.lay1").hide();
+            $("div.lay2").hide();
+            $("div.cancel").hide();
+
+        });
+        $(document).ready(function() {
+            $("#nbutton").click(function() {
+                $("div.lay").show();
+                $("div.lay1").hide();
+                $("div.lay2").hide();
+                $("div.cancel").hide();
+               
+            });
+            $("#nbutton1").click(function() {
+                $("div.lay").hide();
+                $("div.lay1").show();
+                $("div.lay2").hide();
+                $("div.cancel").hide();
+              
+
+            });
+            $("#nbutton2").click(function() {
+                $("div.lay").hide();
+                $("div.lay1").hide();
+                $("div.lay2").show();
+                $("div.cancel").hide();
+              
+
+            });
+
+            $("#nbutton3").click(function() {
+                $("div.lay").hide();
+                $("div.lay1").hide();
+                $("div.lay2").hide();
+                $("div.cancel").show();
+               
+
+            });
+            
+        });
+
+</script>
+  <style>
+            
+            .form-group
+            {
+                color:dodgerblue;
+            }
+            
+  </style>
+
+</head>
+<body>
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-danger" id="nbutton">HOME</a>
+    <a href="#" class="btn btn-danger" id="nbutton1">BOOK APPOINTMENT</a>
+    <a href="#" class="btn btn-danger" id="nbutton2">VIEW APPOINTMENT</a>
+    <a href="#" class="btn btn-danger" id="nbutton3">CANCEL APPOINTMENT</a>
+    
+    <a href="homemedical.html" class="btn btn-danger" >LOGOUT</a>
+</div>
+
+<h1>Welcome</h1>   
+<div class="lay"><hr>
+<h3 style="color:dodgerblue"><center>New Complete Health Checkup Plans-for You and Your Loved Ones</center></h3><br><br>
+<div class="container" >    
+  <div class="row">
+    <center><div class="col-sm-3" style="background-color:lightgrey;"><br>
+     <b style="color:dodgerblue">Standard</b>
+     <hr >
+     <h1>$200<sub>/yr</sub><hr></h1>
+     Doctor Counselling<hr>
+     Lipid Profile<hr>
+     Thyroid Check<hr>
+     Diabetes Check
+    </div></center>
+    <center><div class="col-sm-3" style="background-color:lightgrey;"><br>
+      <b style="color:dodgerblue">Silver</b>
+     <hr >
+     <h1>$350<sub>/yr</sub><hr></h1>
+     Doctor Counselling<hr>
+     Lipid Profile<hr>
+     Thyroid Check<hr>
+     Diabetes Check
+    </div></center>
+    <center><div class="col-sm-3" style="background-color:lightgrey;"><br>
+       <b style="color:dodgerblue">Premium</b>
+     <hr >
+     <h1>$650<sub>/yr</sub><hr></h1>
+     Doctor Counselling<hr>
+     Lipid Profile<hr>
+     Thyroid Check<hr>
+     Diabetes Check
+    </div></center>
+ 
+    <center><div class="col-sm-3" style="background-color:lightgrey;"><br>
+      <b style="color:dodgerblue">Platinum</b>
+     <hr >
+     <h1>$950<sub>/yr</sub><hr></h1>
+     Doctor Counselling<hr>
+     Lipid Profile<hr>
+     Thyroid Check<hr>
+     Diabetes Check<br>
+    </div></center>
+
+  </div>
+</div>
+</div>
+
+<div class="lay1"><hr>
+	<div class="container col-md-3 col-md-offset-4" >
+        <form>
+	<h3 style="color:dodgerblue">Book a Doctor's Appointment</h3>
+        <div class="form-group">
+          Your Login id(Auto Generated)<input type="text" class="form-control" name="pid" id="pid"/>
+          
+        </div>
+        <div class="form-group">
+          The specialist you are loking for(Required)
+          <input list="specialist" name="specialist" class="form-control">
+          <datalist id="specialist">
+
+          </datalist>
+          
+        </div>
+        <div class="form-group">
+          Your Date of visit(Required)
+          <input type="date" id="date" class="form-control" name="date"/></div>
+          <div class="form-group">
+          Your Prefered Time Slot(Required)
+          <input list="time" name="time" class="form-control" >
+          <datalist id="time">
+                <option value="9.00-10.00">
+                <option value="10.00-11.00">
+                <option value="11.00-12.00">
+                <option value="12.00-1.00">
+                <option value="1.00-2.00">
+                <option value="2.00-3.00">
+                <option value="3.00-4.00">
+                <option value="4.00-5.00">
+                <option value="5.00-6.00">
+                <option value="6.00-7.00">
+                <option value="7.00-8.00">
+                <option value="8.00-9.00">      
+          </datalist></div>
+          <div class="form-group">
+          Select Available Doctor(Required)
+          <input list="doctor" name="doctor" class="form-control">
+          <datalist id="doctor">
+
+          </datalist></div>
+        
+          <input type="submit" class="btn btn-danger" value="Book" >
+          <input type="submit" class="btn btn-danger" value="Reset" >
+        </form>
+    </div>
+</div>
+
+<div class="lay2"><hr>
+ <div class="container col-xs-4 col-xs-offset-4" >
+        <form>
+                
+        <div class="form-group">
+               <h3>Search your Appointment By Date </h3>
+          Choose Date to Search Appointment(Required)<input type="date" class="form-control" name="date" id="date"/>
+          
+        </div>
+        
+          
+        </form>
+  
+</div>
+</div>
+<div class="cancel"><hr>
+ <div class="container col-xs-8 col-xs-offset-2" >
+                    <h3 style="color:dodgerblue;">You Can Cancel The Appointment Ateast One day Before The Scheduled date </h3>
+            </div>   
+            
+        <div class="container col-xs-4 col-xs-offset-2" >
+        <form>
+                
+        <div class="form-group">
+               
+                Search the Appointment to Cancel(Required)
+                <input list="cancel" name="cancel" class="form-control">
+                <datalist id="cancel">
+
+                </datalist>
+          
+        </div>
+       
+          
+        </form>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
